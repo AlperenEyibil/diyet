@@ -15,8 +15,9 @@ class _HomePageState extends State<HomePage> {
         children: [
           Expanded(
               child: GridView.count(
+                primary: false,
             mainAxisSpacing: 45,
-            padding: EdgeInsets.all(55),
+            padding: EdgeInsets.only(left: 55,right: 55,top: 100),
             crossAxisSpacing: 30,
             crossAxisCount: 2,
             children: [
