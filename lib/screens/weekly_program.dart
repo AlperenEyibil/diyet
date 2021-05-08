@@ -1,5 +1,4 @@
 import 'package:flutter/cupertino.dart';
-import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 
 class WeeklyProgram extends StatelessWidget {
@@ -7,7 +6,7 @@ class WeeklyProgram extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(backgroundColor: Colors.white,elevation: 0, iconTheme: IconThemeData(color: Colors.black),),
+      appBar: AppBar(backgroundColor: Colors.white,elevation: 0, iconTheme: IconThemeData(color: Colors.lightBlueAccent),),
       body: Container(
         color: Colors.white,
         child: Column(
@@ -20,13 +19,13 @@ class WeeklyProgram extends StatelessWidget {
                   crossAxisSpacing: 50,
                   crossAxisCount: 2,
                   children: [
-                    customCard(context, "Pazartesi", "/weekly_program"),
-                    customCard(context, "Salı", "/weekly_program"),
-                    customCard(context, "Çarşamba", "/weekly_program"),
-                    customCard(context, "Perşembe", "/weekly_program"),
-                    customCard(context, "Cuma", "/weekly_program"),
-                    customCard(context, "Cumartesi", "/weekly_program"),
-                    customCard(context, "Pazar", "/weekly_program"),
+                    customCard(context, "Pazartesi", "/repast"),
+                    customCard(context, "Salı", "/repast"),
+                    customCard(context, "Çarşamba", "/repast"),
+                    customCard(context, "Perşembe", "/repast"),
+                    customCard(context, "Cuma", "/repast"),
+                    customCard(context, "Cumartesi", "/repast"),
+                    customCard(context, "Pazar", "/repast"),
                   ],
                 ))
           ],
@@ -41,10 +40,9 @@ class WeeklyProgram extends StatelessWidget {
       color: Colors.amber,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25)),
-      child: InkWell(
-        borderRadius: BorderRadius.all(Radius.circular(25)),
+      child: GestureDetector(
         onTap: () {
-          Navigator.pushNamed(context, routeName);
+          Navigator.pushNamed(context, routeName,arguments: title);
         },
         child: Container(
           padding: EdgeInsets.all(10),

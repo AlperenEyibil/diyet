@@ -40,8 +40,7 @@ class _HomePageState extends State<HomePage> {
       color: Colors.amber,
       shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(25)),
-      child: InkWell(
-        borderRadius: BorderRadius.all(Radius.circular(25)),
+      child: GestureDetector(
         onTap: (){
           Navigator.pushNamed(context, routeName);
         },

@@ -1,3 +1,4 @@
+import 'package:diyet/screens/repast.dart';
 import 'package:diyet/screens/weekly_program.dart';
 import 'package:flutter/material.dart';
 
@@ -12,11 +13,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      //home: HomePage(),
+
       initialRoute: "/",
       routes: {
         "/":(context)=>HomePage(),
         "/weekly_program":(context)=>WeeklyProgram(),
+        "/repast":(context)=>Repasts(),
       },
     );
   }
