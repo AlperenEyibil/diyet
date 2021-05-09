@@ -1,5 +1,6 @@
-import 'package:diyet/screens/repast.dart';
-import 'package:diyet/screens/weekly_program.dart';
+import 'package:diyet/screens/weekly/repast.dart';
+import 'package:diyet/screens/weekly/weekly_program.dart';
+import 'package:diyet/screens/weekly/repast_settings.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/home_page.dart';
@@ -19,6 +20,7 @@ class MyApp extends StatelessWidget {
         "/":(context)=>HomePage(),
         "/weekly_program":(context)=>WeeklyProgram(),
         "/repast":(context)=>Repasts(),
+        "/repastsettings": (context)=>RepastSettings(),
       },
     );
   }

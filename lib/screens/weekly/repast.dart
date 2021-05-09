@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class Repasts extends StatelessWidget {
-  List <String> bilgiler=[""];
+  final List <String> bilgiler=[""];
 
   @override
   Widget build(BuildContext context) {
@@ -23,7 +23,7 @@ class Repasts extends StatelessWidget {
             child: GestureDetector(
               child: Icon(Icons.settings),
               onTap: () {
-                print("hebele");
+                Navigator.pushNamed(context, "/repastsettings", arguments: day);
               },
             ),
           )
