@@ -1,3 +1,4 @@
+import 'package:diyet/screens/foods/food_list.dart';
 import 'package:diyet/screens/weekly/repast.dart';
 import 'package:diyet/screens/weekly/weekly_program.dart';
 import 'package:diyet/screens/weekly/repast_settings.dart';
@@ -21,6 +22,7 @@ class MyApp extends StatelessWidget {
         "/weekly_program":(context)=>WeeklyProgram(),
         "/repast":(context)=>Repasts(),
         "/repastsettings": (context)=>RepastSettings(),
+        "/foodlist": (context)=>FoodList(),
       },
     );
   }

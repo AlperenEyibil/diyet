@@ -1,7 +1,9 @@
+
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class WeeklyProgram extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
@@ -35,6 +37,7 @@ class WeeklyProgram extends StatelessWidget {
   }
 
   Widget customCard(BuildContext context, String title, String routeName) {
+
     return Card(
       elevation: 15,
       color: Colors.amber,

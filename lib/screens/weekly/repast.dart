@@ -1,7 +1,10 @@
+
 import 'package:flutter/material.dart';
 
 class Repasts extends StatelessWidget {
-  final List <String> bilgiler=[""];
+
+  String bilgiler="boş";
+
 
   @override
   Widget build(BuildContext context) {
@@ -31,12 +34,12 @@ class Repasts extends StatelessWidget {
       ),
       body: ListView(
         children: [
-          kolon("Kahvaltı", bilgiler[0]),
-          kolon("Ara Öğün", bilgiler[0]),
-          kolon("Öğle Yemeği", bilgiler[0]),
-          kolon("Ara Öğün", bilgiler[0]),
-          kolon("Akşam Yemeği", bilgiler[0]),
-          kolon("Atıştırmalık",bilgiler[0]),
+          kolon("Kahvaltı", bilgiler),
+          kolon("Ara Öğün", bilgiler),
+          kolon("Öğle Yemeği", bilgiler),
+          kolon("Ara Öğün", bilgiler),
+          kolon("Akşam Yemeği", bilgiler),
+          kolon("Atıştırmalık",bilgiler),
         ],
         padding: EdgeInsets.all(17.0),
       ),

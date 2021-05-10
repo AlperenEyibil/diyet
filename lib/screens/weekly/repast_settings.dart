@@ -1,7 +1,9 @@
+import 'package:diyet/screens/weekly/weekly_sharedpreferences.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class RepastSettings extends StatelessWidget {
+
 
   TextEditingController _kahvalti= TextEditingController();
   TextEditingController _kahvaltiara= TextEditingController();
@@ -76,28 +78,32 @@ class RepastSettings extends StatelessWidget {
   }
 
   gonderme(String day){
+    WeeklyPreferences pref=new WeeklyPreferences();
     List<String> ogunler= List(6);
-    ogunler[0]=_kahvalti.text;
-    ogunler[1]=_kahvaltiara.text;
-    ogunler[2]=_ogle.text;
-    ogunler[3]=_ogleara.text;
-    ogunler[4]=_aksam.text;
-    ogunler[5]=_atistirmalik.text;
-    if(day=="Pazartesi")
-      print("Pazartesi");
-    else if(day=="Salı")
-      print("Salı");
-    else if(day=="Çarşamba")
-      print("Çarşamba");
-    else if(day=="Perşembe")
-      print("Perşembe");
-    else if(day=="Cuma")
-      print("Cuma");
-    else if(day=="Cumartesi")
-      print("Cumartesi");
-    else if(day=="Pazar")
-      print("Pazar");
-    else
-      print("Hata");
+    ogunler[0]=_kahvalti.text ?? "";
+    ogunler[1]=_kahvaltiara.text ?? "";
+    ogunler[2]=_ogle.text ?? "";
+    ogunler[3]=_ogleara.text ?? "";
+    ogunler[4]=_aksam.text ?? "";
+    ogunler[5]=_atistirmalik.text ?? "";
+    // for (int i=0;i<ogunler.length;i++)
+    //   print(ogunler[i]);
+    pref.yenile(ogunler);
+    // if(day=="Pazartesi")
+    //   pref.yenile(day, ogunler);
+    // else if(day=="Salı")
+    //   pref.yenile(day, ogunler);
+    // else if(day=="Çarşamba")
+    //   pref.yenile(day, ogunler);
+    // else if(day=="Perşembe")
+    //   pref.yenile(day, ogunler);
+    // else if(day=="Cuma")
+    //   pref.yenile(day, ogunler);
+    // else if(day=="Cumartesi")
+    //   pref.yenile(day, ogunler);
+    // else if(day=="Pazar")
+    //   pref.yenile(day, ogunler);
+    // else
+    //   print("Hata");
   }
 }
