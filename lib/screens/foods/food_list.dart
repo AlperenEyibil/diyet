@@ -15,7 +15,7 @@ class FoodList extends StatelessWidget {
         iconTheme: IconThemeData(color: Colors.lightBlueAccent, size: 30),
       ),
       body: ListView.builder(
-        itemCount: Food.foods.length,
+        itemCount: foods.length,
         itemBuilder: (BuildContext context, int index){
           return Hero(
             tag: "hero",
@@ -23,11 +23,10 @@ class FoodList extends StatelessWidget {
               elevation: 0,
               child: ListTile(
                   leading: CircleAvatar(
-                    backgroundImage: NetworkImage(Food.foods[index].imagedir),
-
+                    backgroundImage: NetworkImage(foods[index].imagedir),
                   ),
-                  title: Text(Food.foods[index].foodname),
-                  subtitle: Text(Food.foods[index].foodtitle)
+                  title: Text(foods[index].foodname),
+                  subtitle: Text(foods[index].foodtitle)
               ),
             ),
           );

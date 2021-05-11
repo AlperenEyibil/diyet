@@ -4,8 +4,10 @@ class Food{
   String foodtitle;
   Food({this.imagedir,this.foodname,this.foodtitle});
 
-  static List<Food> foods=[
-    Food(imagedir: "",foodname: "Name",foodtitle: "Açıklama"),
 
-  ];
 }
+
+List<Food> foods=[
+  Food(imagedir: "",foodname: "Name",foodtitle: "Açıklama"),
+
+];
