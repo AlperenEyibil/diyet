@@ -1,3 +1,5 @@
+import 'package:diyet/screens/calories/calorie_main_page.dart';
+import 'package:diyet/screens/calories/calorie_ruler.dart';
 import 'package:diyet/screens/diets/diet_types.dart';
 import 'package:diyet/screens/foods/food_list.dart';
 import 'package:diyet/screens/weekly/repast.dart';
@@ -23,8 +25,11 @@ class MyApp extends StatelessWidget {
         "/weekly_program":(context)=>WeeklyProgram(),
         "/repast":(context)=>Repasts(),
         "/repastsettings": (context)=>RepastSettings(),
-        "/foodlist": (context)=>FoodList(),
+        "/food_list": (context)=>FoodList(),
         "/diet_types":(context)=>DietTypes(),
+        "/calorie_main_page" :(context)=>CalorieMainPage(),
+        "/calorie_ruler":(context)=>CalorieRuler(),
+
       },
     );
   }
