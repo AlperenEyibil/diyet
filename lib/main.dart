@@ -1,3 +1,4 @@
+import 'package:diyet/screens/calories/calorie_calculater.dart';
 import 'package:diyet/screens/calories/calorie_main_page.dart';
 import 'package:diyet/screens/calories/calorie_ruler.dart';
 import 'package:diyet/screens/diets/diet_types.dart';
@@ -29,7 +30,7 @@ class MyApp extends StatelessWidget {
         "/diet_types":(context)=>DietTypes(),
         "/calorie_main_page" :(context)=>CalorieMainPage(),
         "/calorie_ruler":(context)=>CalorieRuler(),
-
+        "/calorie_calculater":(context)=>CalorieCalculater(),
       },
     );
   }

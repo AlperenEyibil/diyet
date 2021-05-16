@@ -23,8 +23,8 @@ class CalorieMainPage extends StatelessWidget{
                   crossAxisSpacing: 30,
                   crossAxisCount: 2,
                   children: [
-                    customCard(context,"Kalori Cetveli", Icons.local_dining,"/calorie_ruler"),
-                    customCard(context,"Kalori Hesapla", Icons.calculate_outlined,""),
+                    customCard(context,"Kalori Cetveli", Icons.straighten,"/calorie_ruler"),
+                    customCard(context,"Kalori Hesapla", Icons.calculate_outlined,"/calorie_calculater"),
                     customCard(context,"Fotoğraf ile Kalori Hesapla", Icons.photo,""),
                     customCard(context,"Video ile Kalori Hesapla", Icons.video_call_outlined,""),
                   ],
