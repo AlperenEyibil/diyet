@@ -6,6 +6,8 @@ import 'package:diyet/screens/foods/food_list.dart';
 import 'package:diyet/screens/weekly/repast.dart';
 import 'package:diyet/screens/weekly/weekly_program.dart';
 import 'package:diyet/screens/weekly/repast_settings.dart';
+import 'package:diyet/screens/weight_control/body_mass_index.dart';
+import 'package:diyet/screens/weight_control/weight_graphic.dart';
 import 'package:flutter/material.dart';
 
 import 'screens/home_page.dart';
@@ -31,6 +33,8 @@ class MyApp extends StatelessWidget {
         "/calorie_main_page" :(context)=>CalorieMainPage(),
         "/calorie_ruler":(context)=>CalorieRuler(),
         "/calorie_calculater":(context)=>CalorieCalculater(),
+        "/weight_graphic":(context)=>WeightGraphic(),
+        "/body_mass_index":(context)=>BodyMassIndex(),
       },
     );
   }

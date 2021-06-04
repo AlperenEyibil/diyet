@@ -26,7 +26,7 @@ class _HomePageState extends State<HomePage> {
               customCard(context,"Diyet Türleri", Icons.accessibility,"/diet_types"),
               customCard(context,"Yemek Tarifleri", Icons.local_dining,"/food_list"),
               customCard(context,"Egzersizler", Icons.run_circle_outlined,"/weekly_program"),
-              customCard(context,"Kilo Takibi", Icons.line_weight,"/weekly_program"),
+              customCard(context,"Kilo Takibi", Icons.line_weight,"/weight_graphic"),
             ],
           ))
         ],
