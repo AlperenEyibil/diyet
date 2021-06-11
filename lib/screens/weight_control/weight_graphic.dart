@@ -14,6 +14,7 @@ class _WeightGraphicState extends State<WeightGraphic> {
     Weights(kilo: 80, tarih: "12.6"),
     Weights(kilo: 75, tarih: "13.6"),
   ];
+  String grup="";
 
   @override
   Widget build(BuildContext context) {
@@ -41,6 +42,19 @@ class _WeightGraphicState extends State<WeightGraphic> {
                   )
                 ],
               ),
+            ),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                Row(children: [
+                  Radio(value: "Günlük", groupValue: grup, onChanged: (val){setState(() {grup=val;});}),
+                  Text("Günlük")
+                ],),
+                Row(children: [
+                  Radio(value: "Haftalık", groupValue: grup, onChanged: (val){setState(() {grup=val;});}),
+                  Text("Haftalık")
+                ],)
+              ],
             ),
             FlatButton(
                 onPressed: () =>
